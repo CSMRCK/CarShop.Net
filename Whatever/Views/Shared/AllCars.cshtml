@@ -1,0 +1,15 @@
+﻿@model Car
+
+
+<div class="col-lg-4">
+    <div>
+        <img src="@Model.img" alt="@Model.name" class="img-thumbnail" />
+        <h2>Model: @Model.name</h2>
+        <p>@Model.shortDesc</p>
+        <p>
+            Price: @Model.price.ToString("c",
+            CultureInfo.CreateSpecificCulture("en-US"))
+        </p>
+        <p><a class="btn btn-warning" href="#">More</a></p>
+    </div>
+</div>
